@@ -1,0 +1,48 @@
+
+<p class="question">{{question.$value}}</p>
+
+<style>
+.boxContainer{
+    width: 800px;
+    height: auto;
+    display:table;
+}
+
+.row {display:table-row;}
+
+.box{
+	text-align: center;
+	font-size: 100px;
+    min-height: 150px;
+    height:300px;
+    width: 300px;
+    display:table-cell;
+    border:1px solid red;
+}
+
+.question{
+	font-size: 70px;
+}
+
+</style>
+<div ng-controller="gameCtrl">
+<div class="boxContainer">
+ <div class="row">
+   <div class="box">{{choice1.$value}}</div>
+   <div class="box">{{choice2.$value}}</div>
+ </div>
+ <div class="row">
+    <div class="box">{{choice3.$value}}</div>
+   <div class="box">{{choice4.$value}}</div>
+ </div>
+</div>
+</div>
+
+
+<!-- <div>HI</div>
+<div>HI2</div>
+<div></div> -->
+
+<!-- <div ng-controller="gameCtrl"></div>
+	{{message}}
+</div> -->
